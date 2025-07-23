@@ -2,25 +2,79 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
+<title>Prodej chytů</title>
 
 <style>
- 
+  body {
+    font-family: Arial, sans-serif;
+  }
 
   h1 {
     text-align: center;
+    font-size: 50px;
+  }
+
+  .produkt {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .produkt img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cena {
+    color: green;
+    font-weight: bold;
+  }
+
+  .tlacitko {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .tlacitko:hover {
+    background-color: #0056b3;
   }
 </style>
 </head>
 <body>
-<h1 style="font-size: 50px;">CHYTY</h1>
 
-  
-  <div style="text-align: center;">
-    <img src="obrazek.jpg" alt="Popis obrázku" width="400">
-    <img src="obrazek2.jpg" alt="Popis obrázku" width="400">
-    <img src="obrazek3.jpg" alt="Popis obrázku" width="400">
-    <img src="obrazek4.jpg" alt="Popis obrázku" width="400">
+<h1>CHYTY NA PRODEJ</h1>
+
+<div style="text-align: center;">
+  <div class="produkt">
+    <img src="obrazek1.jpg" alt="Chyt 1">
+    <p>Lezecký chyt červený</p>
+    <p class="cena">150 Kč</p>
+    <a href="#" class="tlacitko">Koupit</a>
   </div>
+
+  <div class="produkt">
+    <img src="obrazek2.jpg" alt="Chyt 2">
+    <p>Lezecký chyt modrý</p>
+    <p class="cena">200 Kč</p>
+    <a href="#" class="tlacitko">Koupit</a>
+  </div>
+
+  <div class="produkt">
+    <img src="obrazek3.jpg" alt="Chyt 3">
+    <p>Lezecký chyt zelený</p>
+    <p class="cena">180 Kč</p>
+    <a href="#" class="tlacitko">Koupit</a>
+  </div>
+</div>
 
 </body>
 </html>
